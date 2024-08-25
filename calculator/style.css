@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Matemasie", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #80dfd5; /* Light gray background */
+}
+
+.container {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background for the calculator */
+}
+
+.input {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid #ddd; /* Light gray bottom border */
+    text-align: right;
+    box-sizing: border-box; /* Includes padding and border in width */
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #e0e0e0; /* Light gray button background */
+    color: #333; /* Dark text color */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.button:hover {
+    background-color: #ddd; /* Slightly darker gray on hover */
+}
+
+.button.operator {
+    background-color: #ff9800; /* Orange background for operators */
+    color: white;
+}
+
+.button.operator:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+}
+
+.button.double {
+    flex: 2; /* Double width for the "0" button */
+}
+
